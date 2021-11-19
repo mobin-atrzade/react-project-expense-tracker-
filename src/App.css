@@ -1,38 +1,122 @@
 .App {
-  text-align: center;
+    background-color: #f6f6f6;
+    color: #0d1d2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.resultSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.expenseBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 60px;
+    width: 135px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.expenseBox span {
+    font-weight: bold;
+    color: green;
+}
+.btn {
+    outline: none;
+    padding: 5px 10px;
+    background-color: #EDE9FE;
+    color: #6d28d9;
+    border-radius: 5px;
+    border: 1px solid #6d28d9;
+}
+.primary {
+    color: #fff;
+    background-color: #6d28d9;
+    border: none;
+    padding: 8px 10px;
+    margin: 10px 0px;
+}
+.cancelBtn  {
+    background-color: #fff;
+    color: #DC2626;
+    border: 1px solid #DC2626;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    min-height: 170px;
+    justify-content: space-between;
+    margin-bottom: 30px; 
+}
+input {
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    outline: none;
+    border-radius: 5px;
+}
+input[type="radio"] {
+    margin-left: 10px;
+}
+.radioBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px
+}
+.radioBox label {
+    margin-left: 3px;
+    font-size: 13px;
+}
+.transaction {
+    border-radius: 5px;
+    background-color: #f4f4f5;
+    padding: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-right: 4px solid green;
+}
+input.search {
+    display: block;
+    border-radius: 5px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    background-color: #efefef;
+    width: 100%;
+    margin: 20px 0px;
+}
+.tnx-n-l {
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 13px;
+}
+.tnx-no-item {
+    font-weight: bold;
+    color: #DC2626;
+    text-align: center;
+    font-size: 13px;
 }
