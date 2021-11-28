@@ -35,5 +35,4 @@ const ExpenseApp = () => {
         </section>
     )
 }
-
 export default ExpenseApp;
