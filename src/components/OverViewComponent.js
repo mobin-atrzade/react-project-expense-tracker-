@@ -34,5 +34,4 @@ const OverViewComponent = ({ income, expense, addTransAction }) => {
         </>
     )
 }
-
 export default OverViewComponent;
